@@ -168,6 +168,7 @@
     font-weight: 800;
     line-height: 72px;
     letter-spacing: 1.5px;
+    text-transform: uppercase;
     margin: 0;
     margin-bottom: 19px;
     margin-top: -15px;
@@ -186,6 +187,7 @@
 }
 .action-link {
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
     padding: 0.3em 0.3em;
@@ -204,9 +206,111 @@
     color: #fff;
 
 }
+.intro__action_red-empty {
+    background-color: rgba(0, 0, 0, 0.0001);
+    color:  #ff3f40;
+    border: 2px solid #ff3f40;
+}
 .intro__video {
     width: 551px;
     height: 356px;
     object-fit: cover;
     box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
 }
+
+/* services */
+.services {
+    display: flex;
+    width: 1249px;
+    margin: 0 auto;
+    padding: 107px 0 92px;
+    border-bottom: 2px solid #ececec;
+    justify-content: space-between;
+}
+.services__heading {
+    font-family:'Open Sans';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 55px;
+    margin: 0;
+    margin-bottom: 50px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+.services__info {
+    width: 539px;
+}
+.services__about {
+    font-family:'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 64px;
+}  
+.services__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 13px;
+    width: 610px;
+}
+.services__item {
+    width: 285px;
+    margin-bottom: 52px;
+}
+.services__item_maneg::before {
+    display: block;
+    width: 41px;
+    height: 41px;
+    content: '';
+    background-image: url('../img/menagement_koleso.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+}
+.services__item_design::before {
+    display: block;
+    width: 36px;
+    height: 37px;
+    content: '';
+    background-image: url('../img/design_pencil.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+}
+.services__item_logo::before {
+    display: block;
+    width: 44px;
+    height: 36px;
+    content: '';
+    background-image: url('../img/logo_jewel.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+}
+.services__item_anime::before {
+    display: block;
+    width: 41px;
+    height: 36px;
+    content: '';
+    background-image: url('../img/anime_cars.svg');
+    background-repeat: no-repeat;
+    margin-bottom: 33px;
+}
+.services__title {
+    font-family:'Open Sans';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 13px;
+}
+.services__text {
+    font-family:'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+
+}
+    
+
