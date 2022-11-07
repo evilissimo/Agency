@@ -135,8 +135,8 @@
     line-height: 24px;
     text-transform: uppercase;
     text-decoration: none;
-    /* padding-top: 39px;
-    padding-bottom: 26px; */
+    padding-top: 39px;
+    padding-bottom: 26px;
     
 }
 .sait-menu__link:hover {
@@ -172,6 +172,7 @@
     margin: 0;
     margin-bottom: 19px;
     margin-top: -15px;
+    color: #000000;
 }
 .intro__span_special {
     letter-spacing: 6px;
@@ -237,6 +238,7 @@
     margin-bottom: 50px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+    color: #000000;
 }
 .services__info {
     width: 539px;
@@ -303,14 +305,91 @@
     line-height: 1.2;
     margin: 0;
     margin-bottom: 13px;
+    color: #000000;
 }
 .services__text {
     font-family:'Open Sans';
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
+}
+/* feature */
+.feature {
+    width: 1249px;
+    margin: 0 auto;
+    padding: 105px 0 65px;
+}
+
+
+.feature__heading {
+    font-family:'Open Sans';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 28.5px;
 
 
 }
+.feature__about {
+    margin: 0 auto;
+    margin-bottom: 34.5px;
+    width: 537px;
+    text-align: center;
+    font-family:'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.feature__line {
+    width: 130px;
+    height: 2px;
+    background-color: #ff3f40;
+    border: none;
+    margin-bottom: 90px;
+}
+.filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 57px;
+    list-style: none;
+    margin-bottom: 60px;
+}
+.filter__link {
+    font-family:'Open Sans';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+.filter__link:hover {
+    color: #ff3f40;
+}
+.filter__link_active {
+    color: #ff3f40;
+
+}
+.feature__products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.feature__products_img {
+    width: 297px;
+    height: 270px;
+    object-fit: cover;
+    
+}   
     
 
