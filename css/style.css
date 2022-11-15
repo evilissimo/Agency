@@ -86,6 +86,9 @@
     font-weight: 400;
     font-size: 16px;
 }
+button {
+    cursor: pointer;
+}
 
 
 /* header */
@@ -536,6 +539,7 @@
 .team__girl_name {
     display: none;
     position: absolute;
+    color: #fff;
     font-size: 18px;
     font-family:'Open Sans';
     font-weight: 600;
@@ -544,7 +548,6 @@
     left: 0;
     z-index: 1;
     text-align: center;
-    color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding: 10px 0;
@@ -561,6 +564,7 @@
     width: 1249px;
     margin: 0 auto;
     padding: 150px 0 140px;
+    margin-bottom: 104px;
 }
 .substribe__heading {
     color: #fff;
@@ -592,6 +596,7 @@
     border: none;
     border-radius: 5px;
     color: #2c2c2c;
+    margin-bottom: 132px;
 
 }
 .substribe__button {
@@ -610,4 +615,156 @@
     background-color: #ff3f40;
     text-transform: uppercase;
 }
+/* Form */
+.touch{
+    width: 1249px;
+    margin: 0 auto;
+    padding:0 53px;
+    text-align: left;
+
+}
+.touch__header {
+    margin-bottom: 72px;
+    width: 1249px;
+    margin: 0 auto;
+    padding: 65px 0 53px;
+    text-align: left;
+}
+.touch__heading {
+    font-size: 42px;
+    font-family:'Open Sans';
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0px;
+    margin-bottom: 35.5px;
+
+}
+.touch__about{
+    font-size: 16px;
+    font-family:'Open Sans';
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000;
+    width: 753px;
+    margin: 0px;
+    margin-bottom: 37.5px;
+}
+
+.line__left {
+    width: 134px;
+    height: 2px;
+    background-color: #ff3f40;
+    border: none;
+    margin: 0;
+}
+.touch__form input::placeholder,
+.touch__form textarea::placeholder {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #000000;
+}
+.form__name {
+    box-sizing: border-box;
+    width: 339px;
+    height: 69px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 5px;
+    padding-left: 54px;
+    margin-right: 54px;
+    margin-bottom: 44px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #000000;
+
+}
+.form__email {
+    box-sizing: border-box;
+    width: 339px;
+    height: 69px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 5px;
+    padding-left: 48px;
+    margin-bottom: 44px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #000000;
+
+}
+.form__feedback {
+    box-sizing: border-box;
+    width: 731px;
+    height: 249px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 5px;
+    padding: 31px 51px;
+    margin-bottom: 45px;
+    resize: none;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #000000;
+}
+.form__button {
+    width: 731px;
+    height: 72px;
+    background-color:#ff3f40;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-style: Bold;
+    font-size: 17.9;
+    letter-spacing: 0.32px;
+    margin-bottom: 110px;
+}
+.contacts {
+    width: 315px;
+    padding: 141px 17px 141px 81px;
+}
+.touch__contacts {
+    background-color: #2d2d2d;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: #fff;
+    
+}
+.contacts__heading {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.contacts__address {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 27px;
+}
+.contacts__mail {
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.contacts__tel {
+    display: block;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: #fff;
+    
+}
+
+
+    
+
+
+
 
