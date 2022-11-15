@@ -440,7 +440,7 @@
 }
 .team__members {
     display: flex;
-    /* display: grid; */
+    display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     justify-content: space-between;
@@ -469,7 +469,7 @@
         grid-template-columns: subgrid;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
-        align-items: flex-end;
+        align-items: end;
     }
 }
 .team__leader_menu {
@@ -535,18 +535,19 @@
 }
 .team__girl_name {
     display: none;
-    color: #fff;
+    position: absolute;
     font-size: 18px;
     font-family:'Open Sans';
     font-weight: 600;
     text-transform: uppercase;
-    position: absolute;
     bottom: 0;
     left: 0;
     z-index: 1;
     text-align: center;
+    color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 49px;
+    width: 100%;
+    padding: 10px 0;
 }
 .team__photo:hover > .team__girl_name {
     display: block;
