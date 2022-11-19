@@ -236,7 +236,6 @@ button {
 }
 .services__heading {
     font-family:'Open Sans';
-    font-style: bold;
     font-weight: 700;
     font-size: 42px;
     line-height: 55px;
@@ -468,14 +467,14 @@ button {
         display: contents;
     }
 }
-@supports (grid-template-columns: subgrid) {
+/* @supports (grid-template-columns: subgrid) {
     .team__inner {
         display: grid;
         grid-template-columns: subgrid;
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         align-items: end;
-    }
+    } */
 }
 .team__leader_menu {
     width: 631px;
@@ -747,8 +746,8 @@ button {
     color: #fff;
     text-transform: uppercase;
     font-family: 'Open Sans';
-    font-style: Bold;
-    font-size: 17.9;
+    font-weight: 700;
+    font-size: 17.9px;
     letter-spacing: 0.32px;
     margin-bottom: 110px;
 }
@@ -843,7 +842,6 @@ button {
     justify-content: space-between;
     margin-bottom: 100px;
     align-items: center;
-    margin :0 10 0 50;
 }
 .page__inner_foot{
     background-color: #313030;
