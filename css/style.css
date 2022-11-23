@@ -688,7 +688,7 @@ button {
     gap: 22px;
 }
 .substribe__input {
-    max-width: 521px;
+    width: 521px;
     height: 79px;
     padding: 0 36px;
     border: none;
@@ -715,6 +715,7 @@ button {
 }
 @media screen and (max-width:800px) {
     .substribe__input {
+        max-width: 400px;
         margin: 0 50px 40px;
     }
     .substribe__button {
