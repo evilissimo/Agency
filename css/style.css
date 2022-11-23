@@ -105,11 +105,13 @@ button {
 }
 .header {
     display: flex;
-    width: 1249px;
+    flex-wrap: wrap;
+    max-width: 1249px;
     min-height: 89px;
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
 }
+
 .page__header {
     margin: 0 auto;
 
@@ -145,6 +147,15 @@ button {
     padding-bottom: 26px;
     
 }
+@media screen and (max-width: 800px) {
+    .sait-menu {
+    margin-left: 10px;
+}
+.sait-menu__list {
+    justify-content: center;
+
+}
+}
 .sait-menu__link:hover {
     background-color: #ff3f40;
 }
@@ -161,7 +172,8 @@ button {
 }
 .intro {
     display: flex;
-    width: 1249px;
+    flex-wrap: wrap;
+    max-width: 1249px;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -191,6 +203,17 @@ button {
     line-height: 28px;
     margin: 0;
     margin-bottom: 58px;
+}
+@media screen and (max-width: 800px) {
+.intro__heading {
+    font-size: 10vw;
+}
+.intro__text {
+    font-size: 3,8vw;
+    margin-left: 10px;
+}
+
+    
 }
 .action-link {
     display: flex;
@@ -224,11 +247,24 @@ button {
     object-fit: cover;
     box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
 }
+@media screen and (max-width: 800px) {
+    .intro__action_red-full {
+        margin:0 0 70px 10px
+    }
+    .intro__action_red-empty {
+        margin: 0 0 70px 10px;
+    }
+    .intro__video {
+        width: 95%;
+        margin-left: 10px;
+    }
 
+}
 /* services */
 .services {
     display: flex;
-    width: 1249px;
+    flex-wrap: wrap;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 107px 0 92px;
     border-bottom: 2px solid #ececec;
@@ -246,7 +282,7 @@ button {
     color: #000000;
 }
 .services__info {
-    width: 539px;
+    max-width: 539px;
 }
 .services__about {
     font-family:'Open Sans';
@@ -256,6 +292,15 @@ button {
     margin: 0;
     margin-bottom: 64px;
 }  
+@media screen and (max-width: 800px) {
+    .services__heading {
+        margin-left: 10px;
+    }
+    .services__about {
+        margin-left: 10px;
+    }
+
+}
 .services__items {
     display: flex;
     flex-wrap: wrap;
@@ -320,7 +365,7 @@ button {
 }
 /* feature */
 .feature {
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     margin-bottom: 38px;
     padding-top: 104px;
@@ -345,7 +390,7 @@ button {
 .feature__about {
     margin: 0 auto;
     margin-bottom: 34.5px;
-    width: 537px;
+    max-width: 537px;
     text-align: center;
     font-family:'Open Sans';
     font-size: 16px;
@@ -390,24 +435,34 @@ button {
 .feature__products {
     display: flex;
     flex-wrap: wrap;
+    flex:1 1;
     gap: 20px;
 }
 .feature__products_img {
     width: 297px;
     height: 270px;
     object-fit: cover;
+    flex: 1 1;
+
     
 }   
+@media screen and (max-width: 800px) {
+    .feature__products_img {
+    margin:0 10px;
+    }
+    
+}
 /* Team */
 .team {
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding:0 53px;
     text-align: left;
 }
 .team__header {
+   
     margin-bottom: 72px;
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 65px 0 53px;
     text-align: left;
@@ -430,7 +485,7 @@ button {
     font-weight: 400;
     line-height: 28px;
     color: #000000;
-    width: 478px;
+    max-width: 478px;
     margin: 0px;
     margin-bottom: 37.5px;
     
@@ -448,8 +503,9 @@ button {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: end;
     margin-bottom: 130px;
+    column-gap: 2vw;
 }
 .team__leader_photo {
     object-position: bottom;
@@ -475,9 +531,9 @@ button {
         grid-row: 1 / 2;
         align-items: end;
     } */
-}
+
 .team__leader_menu {
-    width: 631px;
+    max-width: 631px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     align-self: center;
@@ -556,13 +612,44 @@ button {
 .team__photo:hover > .team__girl_name {
     display: block;
 }
+@media screen and (max-width:1000px) {
+    .team__members {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .team__leader_photo {
+        grid-row: auto;
+        margin-bottom: 50px;
+    }
+    .team__leader_menu {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        margin: 0 10px;
+        max-width: 631px;
+        
+    }
+    .team__others {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        justify-content: center;
+    }
+    .team__leader_about {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 631px;
+    }
+
+
+
+    
+}
 /* Substribe */
 
 .substribe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 150px 0 140px;
     margin-bottom: 104px;
@@ -585,13 +672,23 @@ button {
     margin: 0;
     margin-bottom: 62px;
 }
+@media screen and (max-width:800px) {
+    .substribe__heading {
+        line-height: normal;
+        margin: 0 10px 50px;
+    }
+    .substribe__about {
+        margin: 0 10px 50px;
+    }
+    
+}
 .substribe__form {
     display: flex;
     flex-wrap: wrap;
     gap: 22px;
 }
 .substribe__input {
-    width: 521px;
+    max-width: 521px;
     height: 79px;
     padding: 0 36px;
     border: none;
@@ -616,6 +713,15 @@ button {
     background-color: #ff3f40;
     text-transform: uppercase;
 }
+@media screen and (max-width:800px) {
+    .substribe__input {
+        margin: 0 50px 40px;
+    }
+    .substribe__button {
+        margin: 0 50px 70px;
+    }
+
+}
 /* Form */
 .touch{
     /* max-width: 1249px; */
@@ -626,7 +732,7 @@ button {
 }
 .touch__header {
     margin-bottom: 72px;
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 65px 0 53px;
     text-align: left;
@@ -649,7 +755,7 @@ button {
     font-weight: 400;
     line-height: 28px;
     color: #000000;
-    width: 753px;
+     max-width: 753px;
     margin: 0px;
     margin-bottom: 37.5px;
 }
