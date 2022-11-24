@@ -150,6 +150,7 @@ button {
 @media screen and (max-width: 800px) {
     .sait-menu {
     margin-left: 10px;
+    display: none;
 }
 .sait-menu__list {
     justify-content: center;
@@ -162,7 +163,86 @@ button {
 .sait-menu__link_active {
     background-color: #ff3f40;
 }
-/* Main */
+/* Popup menu */
+.popup-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.popup-menu__button {
+    display: block;
+    width: 250px;
+    height: 80px;
+    background-image: url('../img/menu.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:  #f6f2f2;
+    background-position: left;
+    border: none;
+    border-radius: 5px;
+}
+.menu__button {
+    font-family: 'Open Sans';
+    color: #2c2c2c;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+
+}
+
+
+.popup-menu__list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,100%);
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.popup-menu__item {
+    display: flex;
+    min-height: 89px;
+    justify-content: center;
+}
+.popup-menu__link {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    font-family: 'Open Sans';
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 39px;
+    padding-bottom: 26px;
+    border-radius: 5px;
+    
+}
+
+.popup-menu__link:hover {
+    background-color: #ff3f40;
+}
+.popup-menu__link_active {
+    background-color: #ff3f40;
+}
+@media screen and (min-width: 800px) {
+    .popup-menu {
+        display: none;
+    }
+    
+}
+       
+
+/* Main/
 /* Intro */
 .page__inner_section {
     display: block;
@@ -715,7 +795,7 @@ button {
 }
 @media screen and (max-width:800px) {
     .substribe__input {
-        max-width: 400px;
+        max-width: 380px;
         margin: 0 50px 40px;
     }
     .substribe__button {
@@ -965,6 +1045,10 @@ button {
     padding-top: 10px;
 }
 
+/* JS */
+.hide {
+    display: none;
+}
 
     
 
