@@ -849,12 +849,12 @@ button {
     text-align: left;
 
 }
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .touch {
         padding:0 30px;
     }
     
-}
+} */
 .touch__header {
     margin-bottom: 72px;
     max-width: 1249px;
