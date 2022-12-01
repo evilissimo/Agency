@@ -297,7 +297,7 @@ button {
 }
 @media screen and (max-width: 800px) {
 .intro__heading {
-    font-size: 10vw;
+    font-size: 9vw;
 }
 .intro__text {
     font-size: 3vw;
@@ -999,6 +999,12 @@ button {
     grid-column: 4 / 5;
     
 }
+@media screen and (max-width: 500px) {
+    .contacts {
+        padding: 141px 17px 141px 60px;
+
+    }
+}
 .touch__contacts {
     background-color: #2d2d2d;
     font-family: 'Open Sans';
@@ -1082,11 +1088,11 @@ button {
     min-height: 111px;
     margin: 0 auto;
     justify-content: space-between;
-    margin-bottom: 100px;
     align-items: center;
 }
 .page__inner_foot{
     background-color: #313030;
+    padding: 0;
 }
 .footer__copy {
     margin: 0;
